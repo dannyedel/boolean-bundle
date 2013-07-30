@@ -1,0 +1,24 @@
+parameters:
+#    danny_edel_boolean.example.class: DannyEdel\BooleanBundle\Example
+
+services:
+#    danny_edel_boolean.example:
+#        class: %danny_edel_boolean.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]
+#
+    danny_edel_boolean.booleanguesser:
+        class: DannyEdel\BooleanBundle\Guesser\BooleanTypeGuesser
+        arguments: [ @doctrine ]
+        tags:
+            - { name: form.type_guesser }
+
+    danny_edel_boolean.requiredguesser:
+        class: DannyEdel\BooleanBundle\Guesser\RequiredTypeGuesser
+        arguments: [ @doctrine ]
+        tags:
+            - { name: form.type_guesser }
+
+    danny_edel_boolean.type.boolchoice:
+        class: DannyEdel\BooleanBundle\Type\BoolchoiceType
+        tags:
+            - { name: form.type, alias: boolchoice }
