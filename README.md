@@ -6,6 +6,7 @@ A bundle to change the default rendering of booleans.
 Rationale
 ---------
 By default, booleans will be rendered to a checkbox, and by default, all fields are required. This is - in my opinion - not optimal:
+
 1. A required checkbox will force the user to answer "yes", which defeats the whole purpose of asking, if the user cannot answer "no" anyway.
 2. A non-required checkbox that gets submitted without being checked does not really tell you whether the user actually read the question and answered "no", or just clicked the submit button.
 3. A required choice/radio with the choices "No"/"Yes" will usually start with the first answer selected, posing the same problem as 2.
