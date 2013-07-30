@@ -1,3 +1,6 @@
 {
-	"name": "dannyedel/symfony2-boolean-bundle"
+	"name": "dannyedel/symfony2-boolean-bundle",
+	"description": "renders booleans as please-select/yes/no boxes instead of the default, required-to-be-checked, checkbox",
+	"license": "MIT",
+	"target-dir": "DannyEdel/BooleanBundle"
 }
