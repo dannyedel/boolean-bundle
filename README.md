@@ -1,5 +1,5 @@
-symfony2-boolean-bundle
-=======================
+boolean-bundle for symfony2
+===========================
 
 A bundle to change the default rendering of booleans.
 
