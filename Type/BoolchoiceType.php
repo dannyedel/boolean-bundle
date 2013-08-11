@@ -9,10 +9,10 @@ class BoolchoiceType extends AbstractType {
 	public function setDefaultOptions( OptionsResolverInterface $resolver ) {
 		$resolver->setDefaults( array(
 			'choices' => array(
-				'' => "Bitte wählen",
 				'0' => "Nein", /** FIXME Translate this **/
 				'1' => "Ja", /** FIXME Translate this **/
 			),
+			'empty_value' => "Bitte wählen", /** FIXME: Translate this */
 			'expanded' => false, /* false: select field | true: radios */
 		));
 	}
