@@ -22,3 +22,8 @@ services:
         class: DannyEdel\BooleanBundle\Type\BoolchoiceType
         tags:
             - { name: form.type, alias: boolchoice }
+
+    danny_edel_boolean.twig.bool_formatter:
+        class: DannyEdel\BooleanBundle\Twig\BoolFormatterExtension
+        tags:
+            - { name: twig.extension }
